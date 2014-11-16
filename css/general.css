@@ -2,6 +2,8 @@
 
 /*Colours*/
 
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -27,18 +29,18 @@
     margin: 0 auto;
 }
 
-html, body {height: 100%; width: 100%;}
-
 html {font-size: 1em;}
 
 body {
-    background: white url(../images/background-image.jpg) no-repeat top center;
+    background-color: white;
     background-size: 100%; 
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 400;
-    line-height: 1.45;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.35;
+    color: #fa423d;
+    letter-spacing: 2px;
 }
+
+/* Typography */
 
 p {margin-bottom: 1.3em;}
 
@@ -48,31 +50,40 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-h1 {
+h1, .uno {
   margin-top: 6rem;
   font-size: 3.157em;
 }
 
-h2 {font-size: 2.369em;}
+h2, .dos {font-size: 2.369em;}
 
-h3 {font-size: 1.777em;}
+h3, .tres {font-size: 1.777em;}
 
-h4 {font-size: 1.333em;}
+h4, .cuatro {font-size: 1.333em;}
 
 small, .font_small {font-size: 0.75em;}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
 
 .display-block {
     display: block;
 }
 
 #intro {
-    height: 100%;
     position: relative;
 }
 
+/* Meet Dani */
+
 .logo-side {
-    height: 121px;
-    width: 116px;
+    height: 119px;
+    width: 115px;
     position: fixed;
 }
 
@@ -89,6 +100,18 @@ small, .font_small {font-size: 0.75em;}
 .logo-piece {
     height: 22px;
     width: 22px;
+    -webkit-transition: -webkit-transform 400s, opacity 0.2s;
+	-moz-transition: -moz-transform 400ms, opacity 0.2s;
+	transition: transform 400ms, opacity 0.2s;
+    -webkit-transform: rotateX(0);
+	-moz-transform: rotateX(0);
+	transform: rotateX(0);
+}
+
+.logo-piece:hover {
+    -webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	transform: rotateX(180deg);
 }
 
 .lp-d {
@@ -114,5 +137,197 @@ small, .font_small {font-size: 0.75em;}
     margin-bottom: 25px;
 }
 
+/* Hola */
 
+.hola {
+    display: relative;
+    width: 450px; 
+    margin: 0 auto;
+    margin-top: 17rem;
+    -webkit-animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
+	animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
+}
 
+.hola-p {
+    text-align: center;
+    -webkit-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+	animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+    -wekbit-animation-delay: 100ms;
+    animation-delay: 100ms;
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+        width: 0px;
+	}
+	
+	100% {
+		opacity: 1;
+        width: 450px;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+        width: 0px;
+	}
+	
+	100% {
+		opacity: 1;
+        width: 450px;
+	}
+}
+
+@-webkit-keyframes fade-in-2 {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Navs */
+
+.nav {
+    position: fixed;
+    z-index: 9000;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.nav li a {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav li a::before,
+.nav li a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 400s, opacity 0.2s;
+	-moz-transition: -moz-transform 400ms, opacity 0.2s;
+	transition: transform 400ms, opacity 0.2s;
+}
+
+.nav li a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav li a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.nav li a:hover::before,
+.nav li a:hover::after,
+.nav li a:focus::before,
+.nav li a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.nav li:nth-child(1){ -webkit-animation-delay: 700ms }
+.nav li:nth-child(2){ -webkit-animation-delay: 780ms }
+.nav li:nth-child(3){ -webkit-animation-delay: 860ms }
+
+.social-nav {
+    top: 50px;
+    left: 30px;
+}
+
+.social-nav li {
+    opacity: 0;
+    -webkit-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+	animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+}
+
+.inside-nav {
+    text-align: right;
+    right: 30px;
+    bottom: 50px;
+}
+
+.inside-nav li {
+    opacity: 0;
+    -webkit-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+	animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+}
+
+@-webkit-keyframes slide-in-left {
+	0% {
+		opacity: 0;
+        margin-left: -200px;
+	}
+    
+	100% {
+		opacity: 1;
+        margin-left: 0px;
+	}
+}
+
+@-webkit-keyframes slide-in-right {
+	0% {
+		opacity: 0;
+        margin-right: -200px;
+	}
+    
+	100% {
+		opacity: 1;
+        margin-right: 0px;
+	}
+}
+
+/* About me */
+
+#about {
+    height: 48rem;
+    position: relative;
+}
+
+#about p {
+    padding: 17rem 50px 0;
+}
+
+/* Work */
+
+.portfolio-piece {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-info {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right: 0;
+	text-align: center;
+	background-color: transparent;
+	height: 100%;
+	padding: 7rem 2rem 0;
+	color: #fff;
+	top: 100%;
+	-webkit-transition: all 380ms ease-in-out;
+    -moz-transition: all 380ms ease-in-out;
+    -o-transition: all 380ms ease-in-out;
+    -ms-transition: all 380ms ease-in-out;
+    transition: all 380ms ease-in-out;
+}
+
+.portfolio-piece:hover .portfolio-info {
+	top: 0;
+}
