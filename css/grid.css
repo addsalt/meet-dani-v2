@@ -19,9 +19,9 @@
   -ms-align-items: center;
 }
 
-.opera-only :-o-prefocus, .grid {
+/*.opera-only :-o-prefocus, .grid {
   word-spacing: -0.43em;
-}
+}*/
 
 .unit {
   letter-spacing: normal;
