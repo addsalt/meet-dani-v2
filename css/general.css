@@ -121,15 +121,6 @@ ul {
     z-index: 9000;
 }
 
-@media only screen and (min-width: 35em) {
-
-    .logo-piece {
-        height: 1.375em;
-        width: 1.375em;
-    }
-    
-}
-
 .logo-piece:hover {
     -webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
@@ -154,6 +145,21 @@ ul {
 
 @media only screen and (min-width: 35em) {
 
+    .logo-piece {
+        height: 1.375em;
+        width: 1.375em;
+    }
+    
+    .lp-l {
+        left: 3.125em;
+        bottom: 3.125em;
+    }
+
+    .lp-r {
+        right: 3.125em;
+        top: 3.125em;
+    }
+    
     .lp-pushtop-1 {
         top: 2.875em;
     }
@@ -351,13 +357,18 @@ ul {
 
 /* About me */
 
-#about {
-    height: 48em;
-    position: relative;
+#about p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
 }
+
+@media only screen and (min-width: 35em) {
 
 #about p {
     padding: 17em 3.125em 0;
+}
+    
 }
 
 /* Work */
