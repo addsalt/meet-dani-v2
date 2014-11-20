@@ -29,7 +29,7 @@
     margin: 0 auto;
 }
 
-html {font-size: 1em;}
+html {font-size: 1em; width: 100%;}
 
 body {
     background-color: white;
@@ -38,6 +38,7 @@ body {
     line-height: 1.35;
     color: #fa423d;
     letter-spacing: 2px;
+    width: 100%;
 }
 
 /* Typography */
@@ -390,4 +391,13 @@ ul {
     position: absolute;
     top: 38%;
     width: 100%;
+    font-size: 1.85em;
+}
+
+@media only screen and (min-width: 35em) {
+    
+    .contact-p {
+        font-size: 3.157em;
+    }
+    
 }
