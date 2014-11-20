@@ -187,7 +187,25 @@ ul {
 
 .nav {
     position: fixed;
+    height: 100vh;
     z-index: 9000;
+}
+
+.left-nav {
+    margin-left: .9375rem;
+    position: fixed;
+}
+
+.right-nav {
+    text-align: right;
+    margin-right: .9375rem;
+    bottom: 1.5625rem;
+    position: fixed;
+}
+
+.default {
+    right: .9375rem;
+    bottom: 1.5625rem;
 }
 
 .nav li {
@@ -239,24 +257,13 @@ ul {
 .nav li:nth-child(2){ -webkit-animation-delay: 780ms }
 .nav li:nth-child(3){ -webkit-animation-delay: 860ms }
 
-.social-nav {
-    top: 1.56255rem;
-    left: .9375rem;
-}
-
-.inside-nav {
-    text-align: right;
-    right: .9375rem;
-    bottom: 1.5625rem;
-}
-
-.social-nav li {
+.left-nav li {
     opacity: 0;
     -webkit-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 	animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 }
 
-.inside-nav li {
+.right- nav li {
     opacity: 0;
     -webkit-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 	animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
@@ -272,12 +279,12 @@ ul {
         margin-bottom: 0.625em;
     }
     
-    .inside-nav {
+    .right- nav {
         right: 1.71rem;
         bottom: 3.125em;
     }
     
-    .social-nav {
+    .left-nav {
         top: 3.125em;
         left: 1.71rem;
     }
@@ -323,20 +330,6 @@ ul {
         margin-right: 0em;
 	}
 }
-
-/* Nav color switches 
-
-.fixed {
-    position: fixed;
-}
-
-.midnightHeader.default {
-    color: #fa423d;
-}
-
-.midnightHeader.color-1 {
-    color: #f39c12;
-}*/
 
 /* Hola */
 
@@ -540,6 +533,13 @@ ul {
     .contact-p, .credits p {
         font-size: 3.157em;
     }
+    
+}
+
+/* Midnight Section Colours */
+
+.midnight-1 {
+    position: absolute;
     
 }
 

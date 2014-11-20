@@ -35,18 +35,16 @@
             <img class="lp-pushtop-1 lp-pushleft-2 logo-piece lp-push-left" src="images/logo/md-E.png" alt="">
             <img class="lp-pushtop-2 lp-pushleft-2 logo-piece display-block" src="images/logo/md-T.png" alt="">
         </div>
-        <div class="header" role="navigation">
-            <ul class="nav social-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="nav inside-nav">
-                <li><a href="http://www.behance.net/meet_dani">Behance</a></li>
-                <li><a href="http://www.linkedin.com/in/danielachavezackermann">LinkedIn</a></li>
-                <li><a href="http://twitter.com/meet_dani">Twitter</a></li>
-            </ul>
-        </div>
+        <ul class="nav midnight-1 left-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav midnight-2 right-nav">
+            <li><a href="http://www.behance.net/meet_dani">Behance</a></li>
+            <li><a href="http://www.linkedin.com/in/danielachavezackermann">LinkedIn</a></li>
+            <li><a href="http://twitter.com/meet_dani">Twitter</a></li>
+        </ul>
     </div>
     
     <div id="about" class="grid grid-middle" role="contentinfo">
@@ -144,8 +142,8 @@
     <script src="js/midnight.jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-          $('.social-nav').midnight();
-          $('.inside-nav').midnight();
+          $('.midnight-1').midnight();
+          $('.midnight-2').midnight();
         });
     </script>
     <script src="js/waypoints.min.js"></script>
