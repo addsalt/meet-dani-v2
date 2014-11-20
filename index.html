@@ -35,7 +35,7 @@
             <img class="lp-pushtop-1 lp-pushleft-2 logo-piece lp-push-left" src="images/logo/md-E.png" alt="">
             <img class="lp-pushtop-2 lp-pushleft-2 logo-piece display-block" src="images/logo/md-T.png" alt="">
         </div>
-        <div class="header">
+        <div class="header" role="navigation">
             <ul class="nav social-nav">
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
@@ -49,14 +49,14 @@
         </div>
     </div>
     
-    <div id="about" class="grid grid-middle">
+    <div id="about" class="grid grid-middle" role="contentinfo">
         <p class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">I am a creative problem solver and visual storyteller from Lima, Perú, based in Ottawa, Canada. I'm a Graphic Design student at Algonquin College, and part of a creative duo called <a href="http://www.addsalt.ca>" target="_blank"><em>Salt</em></a>. Check out my work.</p>
     </div>
     
     <!-- Work -->
-    <section id="work" class="grid" data-midnight="color-1">
+    <section id="work" class="grid" role="main">
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="work/pf1.html">
-			<figure class="portfolio-piece">
+			<figure class="portfolio-piece" data-midnight="color-1">
 				<img src="http://placehold.it/2350x1200/f1c40f/f39c12" class="flex-img" alt="">
 				<figcaption class="portfolio-info p-info-l">
 					<h2 class="tres">Changing the Face of Privacy</h2>
@@ -65,7 +65,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="work/pf2.html">
-			<figure class="portfolio-piece">
+			<figure class="portfolio-piece" data-midnight="color-2">
 				<img src="http://placehold.it/2350x1200/1abc9c/16a085" class="flex-img" alt="">
 				<figcaption class="portfolio-info p-info-l">
 					<h2 class="tres">Explorandes</h2>
@@ -141,15 +141,15 @@
           });
         });
     </script>
-    <script src="midnight.jquery.min.js"></script>
+    <script src="js/midnight.jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-          $('a.fixed').midnight();
+          $('.social-nav').midnight();
+          $('.inside-nav').midnight();
         });
     </script>
-<!--
-<script src="js/waypoints.min.js"></script>
-<script src="js/main.js"></script>-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
