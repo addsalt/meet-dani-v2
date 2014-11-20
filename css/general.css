@@ -338,18 +338,27 @@ ul {
     display: none;
 }
 
-.hola-p {
+.content {
     text-align: center;
+    height: 100%;
+}
+
+.hola-p {
     -webkit-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
 	animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
     -wekbit-animation-delay: 100ms;
     animation-delay: 100ms;
-    display: none;
+    display: block;
+    letter-spacing: 0.125rem;
 }
 
 @media only screen and (min-width: 35em) {
     .hola {
         display: block;
+    }
+    
+    .holahola {
+        display: none;
     }
     
     .hola-p {
