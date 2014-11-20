@@ -81,7 +81,7 @@ ul {
 .logo-side {
     height: 3.750em;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     width: 3.625em;
 }
 
@@ -124,7 +124,6 @@ ul {
     -webkit-transform: rotateX(0);
 	-moz-transform: rotateX(0);
 	transform: rotateX(0);
-    z-index: 9000;
 }
 
 .logo-piece:hover {
@@ -185,28 +184,20 @@ ul {
 
 /* Navigations */
 
-.nav {
-    position: fixed;
-    height: 100vh;
-    z-index: 9000;
-}
-
 .left-nav {
-    margin-left: .9375rem;
     position: fixed;
+    top: 1.5625rem;
+    margin-left: .9375rem;
+    z-index: 4;
 }
 
 .right-nav {
-    text-align: right;
-    margin-right: .9375rem;
-    bottom: 1.5625rem;
     position: fixed;
-}
-
-.default {
+    text-align: right;
     right: .9375rem;
     bottom: 1.5625rem;
-}
+    z-index: 4;
+} 
 
 .nav li {
     margin-bottom: 0.325em;
@@ -263,7 +254,7 @@ ul {
 	animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 }
 
-.right- nav li {
+.right-nav li {
     opacity: 0;
     -webkit-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 	animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
@@ -279,7 +270,7 @@ ul {
         margin-bottom: 0.625em;
     }
     
-    .right- nav {
+    /*.right-nav {
         right: 1.71rem;
         bottom: 3.125em;
     }
@@ -287,7 +278,7 @@ ul {
     .left-nav {
         top: 3.125em;
         left: 1.71rem;
-    }
+    }*/
     
     .nav li a::before {
         margin-right: 0.625em;
@@ -335,7 +326,7 @@ ul {
 
 #intro {
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
 
 .hola {
@@ -463,6 +454,11 @@ ul {
 
 /* Work */
 
+#work {
+    position: relative;
+    z-index: 3;
+}
+
 .portfolio-piece {
 	position: relative;
 	overflow: hidden;
@@ -497,10 +493,11 @@ ul {
 /* Contact */
 
 .contact {
-    background: transparent url(../images/Dani_2.jpg) no-repeat bottom center;
-    background-size: contain;
+    background: white url(../images/Dani_2.jpg) no-repeat bottom center;
+    background-size: cover;
     height: 100vh;
     position: relative;
+    z-index: 1;
 }
 
 .contact-p {
@@ -538,11 +535,6 @@ ul {
 
 /* Midnight Section Colours */
 
-.midnight-1 {
-    position: absolute;
-    
-}
-
 .color-1 {
     color: white;
 }
@@ -568,5 +560,35 @@ ul {
 }
 
 .color-7 {
+    color: #95a5a6;
+}
+
+/* Midnight Section Colours */
+
+.midnightHeader.color-1 {
+    color: white;
+}
+
+.midnightHeader.color-2 {
+    color: #34495e;
+}
+
+.midnightHeader.color-3 {
+    color: #8e44ad;
+}
+
+.midnightHeader.color-4 {
+    color: #2980b9;
+}
+
+.midnightHeader.color-5 {
+    color: #d35400;
+}
+
+.midnightHeader.color-6 {
+    color: #2ecc71;
+}
+
+.midnightHeader.color-7 {
     color: #95a5a6;
 }
