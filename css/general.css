@@ -395,19 +395,20 @@ ul {
 /* About me */
 
 #about {
-    height: 100vh;
+    height: auto;
 }
 
 #about p {
     width: 90%;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.65rem;
     letter-spacing: 0.125rem;
 }
 
 @media only screen and (min-width: 35em) {
     
     #about p {
+        height: 100vh;
         width: 100%;
         font-size: 2.369rem;
         padding: 0 1.56255em;
