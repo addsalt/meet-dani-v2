@@ -338,12 +338,14 @@ ul {
 #intro {
     position: relative;
     height: 100vh;
+    z-index: 2;
+    background-color: white;
+    padding-top: 17em;
 }
 
 .hola {
     width: 28.125em; 
     margin: 0 auto;
-    margin-top: 17em;
     -webkit-animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
 	animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
     display: none;
@@ -423,6 +425,18 @@ ul {
 
 #about {
     height: 100vh;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#about:before {
+    content: ' ';
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, white)
 }
 
 #about p {
@@ -516,12 +530,19 @@ ul {
 
 /* Contact */
 
+.push-contact {
+    margin-bottom: 100vh;
+}
+
 .contact {
     background: white url(../images/Dani_2.jpg) no-repeat bottom center;
     background-size: cover;
     height: 100vh;
+    bottom: 0;
+    width: 100%;
     position: relative;
     z-index: 1;
+    position: fixed;
 }
 
 .contact-p {
