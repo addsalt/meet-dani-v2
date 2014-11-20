@@ -428,7 +428,6 @@ ul {
 
 #about {
     height: 100vh;
-    padding: 1.56255em
 }
 
 #about p {
@@ -436,6 +435,7 @@ ul {
     margin: 0 auto;
     font-size: 1.45rem;
     letter-spacing: 0.125rem;
+    padding: 0 1.325em;
 }
 
 .about-work {
@@ -446,10 +446,14 @@ ul {
 
 @media only screen and (min-width: 35em) {
     
-    #about p {
+    #about {
         height: 100vh;
+    }
+    
+    #about p {
         font-size: 2.369rem;
-        padding: 0 1.56255em;
+        padding: 0 2.91rem;
+        margin: 0;
     }  
     
     .about-work {
