@@ -85,6 +85,7 @@ ul {
     height: 119px;
     width: 115px;
     position: fixed;
+    z-index: 0;
 }
 
 .lp-l {
@@ -99,6 +100,7 @@ ul {
 
 .logo-piece {
     height: 22px;
+    position: absolute;
     width: 22px;
     -webkit-transition: -webkit-transform 400s, opacity 0.2s;
 	-moz-transition: -moz-transform 400ms, opacity 0.2s;
@@ -115,26 +117,53 @@ ul {
 }
 
 .lp-d {
-    margin-bottom: 25px;
+    top: 0;
+    left:0;
 }
 
-.lp-push-left {
-    margin-left: 18px;
+.lp-a {
+    top: 46px;
+    left: 0;
+}
+
+.lp-n {
+    top: 46px;
+    left: 46px;
 }
 
 .lp-i {
-    margin-top: 22px;
-    margin-left: 44px;
+    top: 46px;
+    left: 92px;
 }
 
-.lp-t {
-    margin-top: 22px;
-    margin-left: 88px;
+.lp-i2 {
+    top: 92px;
+    left: 46px;
 }
 
 .lp-m {
-    margin-left: 44px;
-    margin-bottom: 25px;
+    top: 0;
+    left: 46px;
+}
+
+.lp-m2 {
+    top: 46px;
+    left: 0;
+}
+
+.lp-e {
+    top: 46px;
+    left: 46px;
+}
+
+.lp-e2 {
+    top: 46px;
+    left: 92px;
+}
+
+.lp-t {
+    top: 92px;
+    left: 92px;
 }
 
 /* Hola */
@@ -292,6 +321,18 @@ ul {
 	}
 }
 
+/* Nav color switches */
+
+.midnightHeader.default {
+  color: #fa423d;
+}
+.midnightHeader.color-1 {
+  color: #f39c12;
+}
+.midnightHeader.color-2 {
+  color: #16a085;
+}
+
 /* About me */
 
 #about {
@@ -330,4 +371,22 @@ ul {
 
 .portfolio-piece:hover .portfolio-info {
 	top: 0;
+}
+
+/* Contact */
+
+.contact {
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+.contact p {
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
