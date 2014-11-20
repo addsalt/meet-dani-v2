@@ -403,6 +403,7 @@ ul {
     margin: 0 auto;
     font-size: 1.65rem;
     letter-spacing: 0.125rem;
+    padding: 5rem 0;
 }
 
 @media only screen and (min-width: 35em) {
