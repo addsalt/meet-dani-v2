@@ -108,6 +108,7 @@ ul {
     -webkit-transform: rotateX(0);
 	-moz-transform: rotateX(0);
 	transform: rotateX(0);
+    z-index: 9000;
 }
 
 .logo-piece:hover {
@@ -378,12 +379,15 @@ ul {
 /* Contact */
 
 .contact {
-    text-align: center;
     background: transparent url(../images/Dani_2.jpg) no-repeat bottom center;
     background-size: contain;
+    height: 100vh;
+    position: relative;
 }
 
 .contact-p {
     text-align: center;
-    padding: 20rem 0;
+    position: absolute;
+    top: 38%;
+    width: 100%;
 }
