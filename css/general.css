@@ -76,11 +76,6 @@ ul {
     display: block;
 }
 
-#intro {
-    position: relative;
-    height: 100vh;
-}
-
 /* Meet Dani Pieces */
 
 .logo-side {
@@ -345,6 +340,11 @@ ul {
 
 /* Hola */
 
+#intro {
+    position: relative;
+    height: 100vh;
+}
+
 .hola {
     width: 28.125em; 
     margin: 0 auto;
@@ -364,22 +364,28 @@ ul {
 	animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
     -wekbit-animation-delay: 100ms;
     animation-delay: 100ms;
-    display: block;
     letter-spacing: 0.125rem;
+}
+
+.hp-large-screen {
+    display: none;
 }
 
 @media only screen and (min-width: 35em) {
     .hola {
         display: block;
+        position: relative;
     }
     
-    .holahola {
+    .hp-small-screen {
         display: none;
     }
     
-    .hola-p {
-        display: block;
-        opacity: 1;
+    .hp-large-screen {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
     }
 }
 
