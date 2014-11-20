@@ -365,6 +365,7 @@ ul {
     -wekbit-animation-delay: 100ms;
     animation-delay: 100ms;
     letter-spacing: 0.125rem;
+    font-size: 1em;
 }
 
 .hp-large-screen {
@@ -433,7 +434,7 @@ ul {
 #about p {
     width: 100%;
     margin: 0 auto;
-    font-size: 1.65rem;
+    font-size: 1.45rem;
     letter-spacing: 0.125rem;
 }
 
