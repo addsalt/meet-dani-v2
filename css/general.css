@@ -37,7 +37,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.35;
     color: #fa423d;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
     width: 100%;
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
 }
 
 h1, .uno {
-  margin-top: 6rem;
+  margin-top: 6em;
   font-size: 3.157em;
 }
 
@@ -83,10 +83,19 @@ ul {
 /* Meet Dani */
 
 .logo-side {
-    height: 119px;
-    width: 115px;
+    height: 3.750em;
     position: fixed;
     z-index: 0;
+    width: 3.625em;
+}
+
+@media only screen and (min-width: 35em) {
+
+    .logo-side {
+        height: 7.438em;
+        width: 7.188em;
+    }
+    
 }
 
 .lp-l {
@@ -100,9 +109,9 @@ ul {
 }
 
 .logo-piece {
-    height: 22px;
+    height: 0.688em;
     position: absolute;
-    width: 22px;
+    width: 0.688em;
     -webkit-transition: -webkit-transform 400s, opacity 0.2s;
 	-moz-transition: -moz-transform 400ms, opacity 0.2s;
 	transition: transform 400ms, opacity 0.2s;
@@ -112,69 +121,63 @@ ul {
     z-index: 9000;
 }
 
+@media only screen and (min-width: 35em) {
+
+    .logo-piece {
+        height: 1.375em;
+        width: 1.375em;
+    }
+    
+}
+
 .logo-piece:hover {
     -webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 }
 
-.lp-d {
-    top: 0;
-    left:0;
+.lp-pushtop-1 {
+    top: 1.438em;
 }
 
-.lp-a {
-    top: 46px;
-    left: 0;
+.lp-pushtop-2 {
+    top: 2.875em;
 }
 
-.lp-n {
-    top: 46px;
-    left: 46px;
+.lp-pushleft-1 {
+    left: 1.438em;
 }
 
-.lp-i {
-    top: 46px;
-    left: 92px;
+.lp-pushleft-2 {
+    left: 2.875em;
 }
 
-.lp-i2 {
-    top: 92px;
-    left: 46px;
-}
+@media only screen and (min-width: 35em) {
 
-.lp-m {
-    top: 0;
-    left: 46px;
-}
+    .lp-pushtop-1 {
+        top: 2.875em;
+    }
 
-.lp-m2 {
-    top: 46px;
-    left: 0;
-}
+    .lp-pushtop-2 {
+        top: 5.750em;
+    }
 
-.lp-e {
-    top: 46px;
-    left: 46px;
-}
+    .lp-pushleft-1 {
+        left: 2.875em;
+    }
 
-.lp-e2 {
-    top: 46px;
-    left: 92px;
-}
-
-.lp-t {
-    top: 92px;
-    left: 92px;
+    .lp-pushleft-2 {
+        left: 5.750em;
+    }
 }
 
 /* Hola */
 
 .hola {
     display: relative;
-    width: 450px; 
+    width: 28.125em; 
     margin: 0 auto;
-    margin-top: 17rem;
+    margin-top: 17em;
     -webkit-animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
 	animation: fade-in 700ms cubic-bezier(.6,.39,.59,.85);
 }
@@ -190,24 +193,24 @@ ul {
 @-webkit-keyframes fade-in {
 	0% {
 		opacity: 0;
-        width: 0px;
+        width: 0em;
 	}
 	
 	100% {
 		opacity: 1;
-        width: 450px;
+        width: 28.125em;
 	}
 }
 
 @keyframes fade-in {
 	0% {
 		opacity: 0;
-        width: 0px;
+        width: 0em;
 	}
 	
 	100% {
 		opacity: 1;
-        width: 450px;
+        width: 28.125em;
 	}
 }
 
@@ -229,12 +232,21 @@ ul {
 }
 
 .nav li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .nav li a {
     position: relative;
     text-decoration: none;
+    font-size: 0.85em
+}
+
+@media only screen and (min-width: 35em) {
+    
+    .nav li a {
+        font-size: 1em;
+    }
+    
 }
 
 .nav li a::before,
@@ -247,7 +259,7 @@ ul {
 }
 
 .nav li a::before {
-	margin-right: 10px;
+	margin-right: 0.625em;
 	content: '[';
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
@@ -255,7 +267,7 @@ ul {
 }
 
 .nav li a::after {
-	margin-left: 10px;
+	margin-left: 0.625em;
 	content: ']';
 	-webkit-transform: translateX(-20px);
 	-moz-transform: translateX(-20px);
@@ -302,24 +314,24 @@ ul {
 @-webkit-keyframes slide-in-left {
 	0% {
 		opacity: 0;
-        margin-left: -200px;
+        margin-left: -12.500em;
 	}
     
 	100% {
 		opacity: 1;
-        margin-left: 0px;
+        margin-left: 0em;
 	}
 }
 
 @-webkit-keyframes slide-in-right {
 	0% {
 		opacity: 0;
-        margin-right: -200px;
+        margin-right: -12.500em;
 	}
     
 	100% {
 		opacity: 1;
-        margin-right: 0px;
+        margin-right: 0em;
 	}
 }
 
@@ -340,12 +352,12 @@ ul {
 /* About me */
 
 #about {
-    height: 48rem;
+    height: 48em;
     position: relative;
 }
 
 #about p {
-    padding: 17rem 50px 0;
+    padding: 17em 3.125em 0;
 }
 
 /* Work */
@@ -363,7 +375,7 @@ ul {
 	text-align: center;
 	background-color: transparent;
 	height: 100%;
-	padding: 7rem 2rem 0;
+	padding: 7em 2em 0;
 	color: #fff;
 	top: 100%;
 	-webkit-transition: all 380ms ease-in-out;
