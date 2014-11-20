@@ -273,13 +273,13 @@ ul {
     }
     
     .inside-nav {
-        right: 1.875rem;
+        right: 1.71rem;
         bottom: 3.125em;
     }
     
     .social-nav {
         top: 3.125em;
-        left: 1.875rem;
+        left: 1.71rem;
     }
     
     .nav li a::before {
