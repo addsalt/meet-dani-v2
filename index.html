@@ -32,16 +32,18 @@
             <img class="lp-e2 logo-piece lp-push-left" src="images/logo/md-E.png" alt="">
             <img class="lp-t logo-piece display-block" src="images/logo/md-T.png" alt="">
         </div>
-        <ul class="nav social-nav midnightHeader default">
-            <li><a href="#about">About</a></li>
-            <li><a class="ni-2" href="#work">Work</a></li>
-            <li><a class="ni-3" href="#contact">Contact</a></li>
-        </ul>
-        <ul class="nav inside-nav midnightHeader default">
-            <li><a href="http://www.behance.net/meet_dani">Behance</a></li>
-            <li><a class="ni-2" href="http://www.linkedin.com/in/danielachavezackermann">LinkedIn</a></li>
-            <li><a class="ni-3" href="http://twitter.com/meet_dani">Twitter</a></li>
-        </ul>
+        <div class="header">
+            <ul class="nav social-nav">
+                <li><a class="fixed default" href="#about">About</a></li>
+                <li><a class="ni-2" href="#work">Work</a></li>
+                <li><a class="ni-3" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav inside-nav">
+                <li><a href="http://www.behance.net/meet_dani">Behance</a></li>
+                <li><a class="ni-2" href="http://www.linkedin.com/in/danielachavezackermann">LinkedIn</a></li>
+                <li><a class="ni-3" href="http://twitter.com/meet_dani">Twitter</a></li>
+            </ul>
+        </div>
     </div>
     
     <div id="about">
@@ -49,9 +51,9 @@
     </div>
     
     <!-- Work -->
-    <section id="work" class="grid">
+    <section id="work" class="grid" data-midnight="color-1">
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf1.html">
-			<figure class="portfolio-piece" data-midnight="color-1">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/f1c40f/f39c12" class="flex-img" alt="">
 				<figcaption class="portfolio-info p-info-l">
 					<h2 class="tres">Changing the Face of Privacy</h2>
@@ -60,7 +62,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf2.html">
-			<figure class="portfolio-piece" data-midnight="color-2">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/1abc9c/16a085" class="flex-img" alt="">
 				<figcaption class="portfolio-info p-info-l">
 					<h2 class="tres">Explorandes</h2>
@@ -69,7 +71,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf3.html">
-			<figure class="portfolio-piece" data-midnight="color-3">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/9b59b6/8e44ad" class="flex-img" alt="">
 				<figcaption class="portfolio-info">
 					<h2 class="tres">Frontcrush</h2>
@@ -78,7 +80,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf4.html">
-			<figure class="portfolio-piece" data-midnight="color-4">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/e74c3c/c0392b" class="flex-img" alt="">
 				<figcaption class="portfolio-info">
 					<h2 class="tres">Multiplica tus Clientes</h2>
@@ -87,7 +89,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf5.html">
-			<figure class="portfolio-piece" data-midnight="color-5">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/00c7c2/16a085" class="flex-img" alt="">
 				<figcaption class="portfolio-info">
 					<h2 class="tres">Merivale Fish Market</h2>
@@ -96,7 +98,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf6.html">
-			<figure class="portfolio-piece" data-midnight="color-6">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/9b59b6/8e44ad" class="flex-img" alt="">
 				<figcaption class="portfolio-info">
 					<h2 class="tres">Motel Montcalm</h2>
@@ -105,7 +107,7 @@
 			</figure>
 		</a>
 		<a class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" href="pf7.html">
-			<figure class="portfolio-piece" data-midnight="color-7">
+			<figure class="portfolio-piece">
 				<img src="http://placehold.it/2350x1200/2ecc71/27ae60" class="flex-img" alt="">
 				<figcaption class="portfolio-info">
 					<h2 class="tres">USIL</h2>
@@ -115,13 +117,8 @@
 		</a>
     </section>
     
-    <footer id="contact" data-midnight="color-8">
-        <figure class="contact">
-            <img src="images/Dani_2.jpg" alt="" class="flex-img">
-            <figcaption>
-                <p class="contact-p uno">hey@meetdani.ca</p>
-            </figcaption>
-        </figure>
+    <footer id="contact" class="contact">
+        <p class="contact-p uno">hey@meetdani.ca</p>
     </footer>
     
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -144,7 +141,7 @@
     <script src="midnight.jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-          $('.nav').midnight();
+          $('a.fixed').midnight();
         });
     </script>
 <!--
