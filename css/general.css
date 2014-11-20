@@ -184,18 +184,27 @@ ul {
 
 /* Navigations */
 
+.left-nav-wrap {
+    padding-top: 1.5625rem;
+    padding-left: .9375rem;
+}
+
+.right-nav-wrap {
+    padding-right: .9375rem;
+    padding-bottom: 1.5625rem;
+    text-align: right;
+    padding-top: calc(100vh - 7.5rem);
+}
+
 .left-nav {
+    pointer-events: none;
     position: fixed;
-    top: 1.5625rem;
-    margin-left: .9375rem;
     z-index: 4;
 }
 
 .right-nav {
+    pointer-events: none;
     position: fixed;
-    text-align: right;
-    right: .9375rem;
-    bottom: 1.5625rem;
     z-index: 4;
 } 
 
@@ -207,10 +216,12 @@ ul {
     position: relative;
     text-decoration: none;
     font-size: 0.85em;
+    pointer-events: auto;
 }
 
 .nav li a::before,
 .nav li a::after {
+    pointer-events: auto;
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 400s, opacity 0.2s;
@@ -326,7 +337,7 @@ ul {
 
 #intro {
     position: relative;
-    height: 100%;
+    height: 100vh;
 }
 
 .hola {
@@ -422,10 +433,26 @@ ul {
     padding: 0 1.325em;
 }
 
+.work-nav {
+    z-index: 9000;
+}
+
+.work-desc {
+    position: relative;
+    min-height: 90vh;
+    z-index: 1000;
+    background-color: #fff;
+}
+
 .about-work {
     font-size: 1.45rem;
     letter-spacing: 0.125rem;
-    padding: 4rem 1.325em;
+    position: fixed;
+}
+
+.work-images {
+    position: relative;
+    z-index: 5000;
 }
 
 @media only screen and (min-width: 35em) {
@@ -442,9 +469,6 @@ ul {
     
     .about-work {
         margin: 0;
-    }
-    
-    .about-work {
         font-size: 2.1324rem;
         letter-spacing: 0.125rem;
         padding: 10rem 2.91rem;
@@ -516,7 +540,15 @@ ul {
     font-size: 1.85em;
 }
 
+.last-img {
+    margin-bottom: 14rem;
+}
+
 .credits {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
     text-align: center;
     padding: 3rem;
 }
