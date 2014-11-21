@@ -39,6 +39,7 @@ body {
     color: #fa423d;
     letter-spacing: 0.125em;
     width: 100%;
+    position: relative;
 }
 
 /* Typography */
@@ -271,6 +272,9 @@ ul {
 	animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 }
 
+.nav-2 li:nth-child(1){ -webkit-animation-delay: 10ms }
+.nav-2 li:nth-child(2){ -webkit-animation-delay: 90ms }
+
 @media only screen and (min-width: 35em) {
     
     .nav li a {
@@ -447,28 +451,6 @@ ul {
     padding: 0 1.325em;
 }
 
-.work-nav {
-    z-index: 9000;
-}
-
-.work-desc {
-    position: relative;
-    min-height: 90vh;
-    z-index: 1000;
-    background-color: #fff;
-}
-
-.about-work {
-    font-size: 1.45rem;
-    letter-spacing: 0.125rem;
-    position: fixed;
-}
-
-.work-images {
-    position: relative;
-    z-index: 5000;
-}
-
 @media only screen and (min-width: 35em) {
     
     #about {
@@ -480,21 +462,39 @@ ul {
         padding: 0 2.91rem;
         margin: 0;
     }  
-    
-    .about-work {
-        margin: 0;
-        font-size: 2.1324rem;
-        letter-spacing: 0.125rem;
-        padding: 10rem 2.91rem;
-    }
 
 }
 
 /* Work */
 
+.not-active {
+    opacity: .2;
+}
+
 #work {
     position: relative;
     z-index: 3;
+}
+
+.work-desc {
+    position: relative;
+    min-height: 80vh;
+    z-index: 0;
+    background-color: #fff;
+}
+
+.about-work {
+    font-size: 1.45rem;
+    letter-spacing: 0.125rem;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.work-images {
+    position: relative;
+    z-index: 1;
+    background-color: white;
 }
 
 .portfolio-piece {
@@ -522,9 +522,16 @@ ul {
 
 @media only screen and (min-width: 35em) {
 
-.portfolio-piece:hover .portfolio-info {
-	top: 0;
-}
+    .about-work {
+        margin: 0;
+        font-size: 2.1324rem;
+        letter-spacing: 0.125rem;
+        padding: 10rem 2.91rem;
+    }
+    
+    .portfolio-piece:hover .portfolio-info {
+        top: 0;
+    }
     
 }
 
@@ -553,14 +560,6 @@ ul {
     font-size: 1.85em;
 }
 
-.not-active {
-    color: rgba(250, 66, 61, 0.21);
-}
-
-.credits p {
-    font-size: 1.85em;
-}
-
 .last-img {
     margin-bottom: 14rem;
 }
@@ -571,7 +570,15 @@ ul {
     left: 0;
     right:0;
     text-align: center;
-    padding: 3rem;
+}
+
+.credits p {
+    font-size: 1.85em;
+}
+
+.credits dl {
+    position: relative;
+    padding-top: 10rem;
 }
 
 .credits dt {
@@ -586,7 +593,7 @@ ul {
     
 }
 
-/* Midnight Section Colours */
+/* Portfolio Body Colours */
 
 .color-1 {
     color: white;

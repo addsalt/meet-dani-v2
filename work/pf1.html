@@ -13,28 +13,33 @@
 </head>
 <body>
 
-    <div class="color-2" role="navigation">
-        <ul class="nav work-nav left-nav">
-            <li><a href="../index.html#work">Back</a></li>
-        </ul>
-        <ul class="nav work-nav right-nav">
-            <li class="not-active"><a href="">Previous</a></li>
-            <li><a href="pf2.html">Next </a></li>
-        </ul>
+    <div role="navigation">
+        <div class="left-nav">
+            <ul class="nav nav-2 left-nav-wrap">
+                <li><a href="../index.html#work">Back</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <ul class="nav nav-2 right-nav-wrap">
+                <li><a class="not-active">Previous</a></li>
+                <li><a href="pf2.html">Next </a></li>
+            </ul>
+        </div>
     </div>
     
-    <div class="work-desc">
-        <p class="about-work" role="contentinfo">This spread is one of my favourites. The article touches on the roll that technology plays in transforming our personal boundaries, addressing the issue of large corporations turning in our data for profit. In this scenario, our identities — the things that make us, us — become nothing more than a neatly packaged product.</p>
+    <div class="work-desc grid grid-middle">
+        <p class="about-work unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" role="contentinfo">This spread is one of my favourites. The article touches on the roll that technology plays in transforming our personal boundaries, addressing the issue of large corporations turning in our data for profit. In this scenario, our identities — the things that make us, us — become nothing more than a neatly packaged product.</p>
     </div>
     
     <!-- Work -->
     <div class="work-images grid" role="main">
-        <figure class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-            <img src="http://placehold.it/2350x1200/f1c40f/f39c12" class="flex-img" alt=""></figure>
-        <figure class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+        <figure class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" data-midnight="mh-color-1">
+            <img src="http://placehold.it/2350x1200/f1c40f/f39c12" class="flex-img" alt="">
+        </figure>
+        <figure class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" data-midnight="mh-color-2">
             <img src="http://placehold.it/2350x1200/1abc9c/16a085" class="flex-img" alt="">
         </figure>
-        <figure class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <figure class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2" data-midnight="mh-color-3">
             <img src="http://placehold.it/2350x1800/e74c3c/c0392b" class="flex-img" alt="">
         </figure>
         <figure class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
@@ -55,6 +60,13 @@
     </footer>
     
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/midnight.jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.left-nav').midnight();
+        $('.right-nav').midnight();
+    });
+</script>
 <script src="../js/main.js"></script>
     
 </body>
