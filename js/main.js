@@ -1,9 +1,15 @@
 var $win = $(window);
 var $aboutWork = $('.about-work');
+var $workDesc = $('.work-desc');
 
 $win.on('scroll', function(){
     var scrollPos = $win.scrollTop();
-    if(scrollPos < 450) {
+    if(scrollPos < 350) {
         $aboutWork.css('margin-top',scrollPos/5)
     }
+});
+
+$win.on('resize', function(){
+    var height=$aboutWork.outerHeight();
+    $workDesc.css('min-height',height);
 });
