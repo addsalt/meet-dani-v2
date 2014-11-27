@@ -368,7 +368,7 @@ ul {
     animation-delay: 100ms;
     letter-spacing: 0.125rem;
     font-size: 1em;
-    margin-top: -2rem;
+    margin-top: -.5rem;
 }
 
 .hp-large-screen {
@@ -465,7 +465,7 @@ ul {
     
     #about p {
         font-size: 2.369rem;
-        padding: 0 2.91rem;
+        padding: 0 2.15rem;
         margin: 0;
     }  
 
@@ -495,6 +495,7 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
+    padding: 4rem 1.92rem;
 }
 
 .work-images {
@@ -532,7 +533,7 @@ ul {
         margin: 0;
         font-size: 2.1324rem;
         letter-spacing: 0.125rem;
-        padding: 10rem 2.91rem;
+        padding: 10rem 2.31rem;
     }
     
     .portfolio-piece:hover .portfolio-info {
