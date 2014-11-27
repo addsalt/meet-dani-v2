@@ -285,16 +285,6 @@ ul {
         margin-bottom: 0.625em;
     }
     
-    /*.right-nav {
-        right: 1.71rem;
-        bottom: 3.125em;
-    }
-    
-    .left-nav {
-        top: 3.125em;
-        left: 1.71rem;
-    }*/
-    
     .nav li a::before {
         margin-right: 0.625em;
         content: '[';
@@ -344,7 +334,18 @@ ul {
     height: 100vh;
     z-index: 2;
     background-color: white;
-    padding-top: 17em;
+}
+
+@media only screen and (min-width: 35em) {
+ 
+    #intro {
+        position: relative;
+        height: 100vh;
+        z-index: 2;
+        background-color: white;
+        padding-top: 17em;
+    }
+
 }
 
 .hola {
@@ -367,6 +368,7 @@ ul {
     animation-delay: 100ms;
     letter-spacing: 0.125rem;
     font-size: 1em;
+    margin-top: -2rem;
 }
 
 .hp-large-screen {
@@ -377,6 +379,10 @@ ul {
     .hola {
         display: block;
         position: relative;
+    }
+    
+    .hola-p {
+        margin-top: 0; 
     }
     
     .hp-small-screen {
