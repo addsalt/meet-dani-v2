@@ -25,6 +25,10 @@
     margin: 0 auto;
 }
 
+.center {
+    text-align: center;
+}
+
 html {font-size: 1em; width: 100%;}
 
 body {
