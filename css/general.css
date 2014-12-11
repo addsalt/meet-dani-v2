@@ -562,6 +562,11 @@ ul {
         top: -16px;
         height: 16px;
         width: 100%;
+        background-color: white;
+        background-image: -webkit-linear-gradient(to bottom, transparent, white);
+        background-image: -moz-linear-gradient(to bottom, transparent, white);
+        background-image: -ms-linear-gradient(to bottom, transparent, white);
+        background-image: -o-linear-gradient(to bottom, transparent, white);
         background-image: linear-gradient(to bottom, transparent, white)
     }
     
@@ -596,7 +601,7 @@ ul {
     position: relative;
     z-index: 1;
     background-color: white;
-    margin-bottom: 12rem;
+    margin-bottom: 4rem;
 }
 
 .portfolio-piece {
@@ -632,6 +637,10 @@ ul {
         position: fixed;
     }
     
+    .work-images {
+        margin-bottom: 12rem;
+    }
+    
     .portfolio-piece:hover .portfolio-info {
         top: 0;
     }
@@ -639,10 +648,6 @@ ul {
 }
 
 /* Contact */
-
-.push-contact {
-    margin-bottom: 100vh;
-}
 
 .contact {
     background: white url(../images/Dani_2.jpg) no-repeat bottom center;
@@ -663,7 +668,7 @@ ul {
 }
 
 .credits {
-    position: fixed;
+    position: relative;
     bottom:2rem;
     left: 0;
     right:0;
@@ -674,19 +679,27 @@ ul {
     font-size: 1.85em;
 }
 
-.credits dl {
-    position: relative;
-    padding-top: 10rem;
-}
-
 .credits dt {
     margin-top: 1rem;
 }
 
 @media only screen and (min-width: 35em) {
     
+    .push-contact {
+        margin-bottom: 100vh;
+    }
+    
     .contact {
         position: fixed;
+    }
+    
+    .credits {
+        position: fixed;
+    }
+    
+    .credits dl {
+        position: relative;
+        padding-top: 10rem;
     }
     
     .contact-p, .credits p {
