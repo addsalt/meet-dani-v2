@@ -755,6 +755,18 @@ ul {
 
 /* Midnight Section Colours */
 
+.pf-color-1 {
+    color: #ea323e;
+}
+
+.pf-color-4 {
+    color: #38b7a8;
+}
+
+.mh-white {
+    color: white;
+}
+
 .mh-color-1 {
     color: #f39c12;
 }
