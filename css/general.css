@@ -652,7 +652,6 @@ ul {
     width: 100%;
     position: relative;
     z-index: 1;
-    position: fixed;
 }
 
 .contact-p {
@@ -685,6 +684,10 @@ ul {
 }
 
 @media only screen and (min-width: 35em) {
+    
+    .contact {
+        position: fixed;
+    }
     
     .contact-p, .credits p {
         font-size: 3.157em;
