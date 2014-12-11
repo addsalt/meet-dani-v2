@@ -82,7 +82,7 @@ ul {
 .logo-side {
     height: 3.750em;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 3.625em;
 }
 
@@ -212,13 +212,13 @@ ul {
 .left-nav {
     pointer-events: none;
     position: fixed;
-    z-index: 4;
+    z-index: 10;
 }
 
 .right-nav {
     pointer-events: none;
     position: fixed;
-    z-index: 4;
+    z-index: 10;
 } 
 
 .nav li {
@@ -618,7 +618,7 @@ ul {
 
 .work-images {
     position: relative;
-    z-index: 1;
+    z-index: 5;
     background-color: white;
     margin-bottom: 4rem;
 }
@@ -692,6 +692,8 @@ ul {
     left: 0;
     right:0;
     text-align: center;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .credits p {
