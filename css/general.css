@@ -733,34 +733,18 @@ ul {
     color: white;
 }
 
-.color-2 {
-    color: #34495e;
-}
-
-.color-3 {
-    color: #8e44ad;
-}
-
-.color-4 {
-    color: #2980b9;
-}
-
-.color-5 {
-    color: #d35400;
-}
-
-.color-6 {
-    color: #2ecc71;
-}
-
-.color-7 {
-    color: #95a5a6;
-}
-
 /* Midnight Section Colours */
 
 .pf-color-1 {
     color: #ea323e;
+}
+
+.pf-color-2 {
+    color: #06a48d;
+}
+
+.pf-color-3 {
+    color: #38b7a8;
 }
 
 .pf-color-4 {
@@ -769,32 +753,4 @@ ul {
 
 .mh-white {
     color: white;
-}
-
-.mh-color-1 {
-    color: #f39c12;
-}
-
-.mh-color-2 {
-    color: #16a085;
-}
-
-.mh-color-3 {
-    color: #8e44ad;
-}
-
-.mh-color-4 {
-    color: #c0392b;
-}
-
-.mh-color-5 {
-    color: #16a085;
-}
-
-.mh-color-6 {
-    color: #8e44ad;
-}
-
-.mh-color-7 {
-    color: #27ae60;
 }
