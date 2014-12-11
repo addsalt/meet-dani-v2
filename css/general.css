@@ -582,11 +582,13 @@ ul {
         height: 16px;
         width: 100%;
         background-color: transparent;
+        background: -webkit-gradient(linear, left top, left bottom, transparent, white);
         background-image: -webkit-linear-gradient(to bottom, transparent, white);
         background-image: -moz-linear-gradient(to bottom, transparent, white);
         background-image: -ms-linear-gradient(to bottom, transparent, white);
         background-image: -o-linear-gradient(to bottom, transparent, white);
-        background-image: linear-gradient(to bottom, transparent, white)
+        background-image: linear-gradient(to bottom, transparent, white);
+
     }
     
 }
