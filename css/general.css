@@ -681,7 +681,7 @@ ul {
 .contact-p {
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 9%;
     width: 100%;
     font-size: 1.85em;
 }
@@ -748,7 +748,19 @@ ul {
 }
 
 .pf-color-4 {
-    color: #38b7a8;
+    color: #ed4356;
+}
+
+.pf-color-5 {
+    color: #008a8d;
+}
+
+.pf-color-6 {
+    color: #d7263a;
+}
+
+.pf-color-7 {
+    color: #3fb6d4;
 }
 
 .mh-white {
