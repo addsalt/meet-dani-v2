@@ -5,7 +5,7 @@ var $workDesc = $('.work-desc');
 $win.on('scroll', function(){
     var scrollPos = $win.scrollTop();
     if(scrollPos < 350) {
-        $aboutWork.css('margin-top',scrollPos/5)
+        $aboutWork.css('margin-top',scrollPos/2)
     }
 });
 

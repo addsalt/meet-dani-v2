@@ -1,9 +1,5 @@
 /* CSS */
 
-/*Colours*/
-
-/* General */
-
 * {
     margin: 0;
     padding: 0;
@@ -119,17 +115,25 @@ ul {
     height: 0.688em;
     position: absolute;
     width: 0.688em;
+    
     -webkit-transition: -webkit-transform 400s, opacity 0.2s;
 	-moz-transition: -moz-transform 400ms, opacity 0.2s;
+    -ms-transition: -moz-transform 400ms, opacity 0.2s;
+    -o-transition: -moz-transform 400ms, opacity 0.2s;
 	transition: transform 400ms, opacity 0.2s;
+    
     -webkit-transform: rotateX(0);
 	-moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
 	transform: rotateX(0);
 }
 
 .logo-piece:hover {
     -webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 }
 
@@ -197,6 +201,10 @@ ul {
     padding-top: calc(100vh - 7.5rem);
 }
 
+.right-nav-wrap-work {
+    padding-top: calc(100vh - 4.95rem);
+}
+
 .left-nav {
     pointer-events: none;
     position: fixed;
@@ -225,24 +233,30 @@ ul {
     pointer-events: auto;
 	display: inline-block;
 	opacity: 0;
-	-webkit-transition: -webkit-transform 400s, opacity 0.2s;
+    -webkit-transition: -webkit-transform 400s, opacity 0.2s;
 	-moz-transition: -moz-transform 400ms, opacity 0.2s;
+    -ms-transition: -webkit-transform 400s, opacity 0.2s;
+    -o-transition: -webkit-transform 400s, opacity 0.2s;
 	transition: transform 400ms, opacity 0.2s;
 }
 
 .nav li a::before {
 	margin-right: 0.625em;
 	content: '[';
-	-webkit-transform: translateX(0.625em);
+    -webkit-transform: translateX(0.625em);
 	-moz-transform: translateX(0.625em);
+    -ms-transform: translateX(0.625em);
+    -o-transform: translateX(0.625em);
 	transform: translateX(0.625em);
 }
 
 .nav li a::after {
 	margin-left: 0.625em;
 	content: ']';
-	-webkit-transform: translateX(-0.625em);
+    -webkit-transform: translateX(-0.625em);
 	-moz-transform: translateX(-0.625em);
+    -ms-transform: translateX(0.625em);
+    -o-transform: translateX(0.625em);
 	transform: translateX(-0.625em);
 }
 
@@ -251,29 +265,70 @@ ul {
 .nav li a:focus::before,
 .nav li a:focus::after {
 	opacity: 1;
-	-webkit-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 	transform: translateX(0px);
 }
 
-.nav li:nth-child(1){ -webkit-animation-delay: 700ms }
-.nav li:nth-child(2){ -webkit-animation-delay: 780ms }
-.nav li:nth-child(3){ -webkit-animation-delay: 860ms }
+.nav li:nth-child(1){ 
+    -webkit-animation-delay: 700ms; 
+    -moz-animation-delay: 700ms;
+    -ms-animation-delay: 700ms; 
+    -o-animation-delay: 700ms;
+    animation-delay: 700ms
+}
+
+.nav li:nth-child(2){ 
+    -webkit-animation-delay: 780ms; 
+    -moz-animation-delay: 780ms;
+    -ms-animation-delay: 780ms; 
+    -o-animation-delay: 780ms;
+    animation-delay: 780ms
+}
+
+.nav li:nth-child(3){ 
+    -webkit-animation-delay: 860ms; 
+    -moz-animation-delay: 860ms;
+    -ms-animation-delay: 860ms; 
+    -o-animation-delay: 860ms;
+    animation-delay: 860ms
+}
 
 .left-nav li {
     opacity: 0;
+    -o-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+    -ms-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+    -moz-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
     -webkit-animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 	animation: slide-in-left 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 }
 
 .right-nav li {
     opacity: 0;
+    -o-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+    -ms-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
+    -moz-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
     -webkit-animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 	animation: slide-in-right 500ms cubic-bezier(.6,.39,.59,.85) forwards;
 }
 
-.nav-2 li:nth-child(1){ -webkit-animation-delay: 10ms }
-.nav-2 li:nth-child(2){ -webkit-animation-delay: 90ms }
+.nav-2 li:nth-child(1){ 
+    -webkit-animation-delay: 10ms; 
+    -moz-animation-delay: 10ms;
+    -ms-animation-delay: 10ms; 
+    -o-animation-delay: 10ms;
+    animation-delay: 10ms;
+}
+
+.nav-2 li:nth-child(2){ 
+    -webkit-animation-delay: 90ms; 
+    -moz-animation-delay: 90ms;
+    -ms-animation-delay: 90ms; 
+    -o-animation-delay: 90ms;
+    animation-delay: 90ms;
+}
 
 @media only screen and (min-width: 35em) {
     
@@ -288,8 +343,10 @@ ul {
     .nav li a::before {
         margin-right: 0.625em;
         content: '[';
-        -webkit-transform: translateX(1.250em);
+        -o-transform: translateX(1.250em);
+        -ms-transform: translateX(1.250em);
         -moz-transform: translateX(1.250em);
+        -webkit-transform: translateX(1.250em);
         transform: translateX(1.250em);
     }
 
@@ -298,6 +355,8 @@ ul {
         content: ']';
         -webkit-transform: translateX(-1.250em);
         -moz-transform: translateX(-1.250em);
+        -ms-transform: translateX(-1.250em);
+        -o-transform: translateX(-1.250em);
         transform: translateX(-1.250em);
     }
     
@@ -316,15 +375,28 @@ ul {
 }
 
 @-webkit-keyframes slide-in-right {
-	0% {
-		opacity: 0;
-        margin-right: -12.500em;
-	}
-    
-	100% {
-		opacity: 1;
-        margin-right: 0em;
-	}
+	0% { opacity: 0; margin-right: -12.500em;}
+    100% { opacity: 1; margin-right: 0em;}
+}
+
+@-moz-keyframes slide-in-right {
+	0% { opacity: 0; margin-right: -12.500em;}
+    100% { opacity: 1; margin-right: 0em;}
+}
+
+@-ms-keyframes slide-in-right {
+	0% { opacity: 0; margin-right: -12.500em;}
+    100% { opacity: 1; margin-right: 0em;}
+}
+
+@-o-keyframes slide-in-right {
+	0% { opacity: 0; margin-right: -12.500em;}
+    100% { opacity: 1; margin-right: 0em;}
+}
+
+@keyframes slide-in-right {
+	0% { opacity: 0; margin-right: -12.500em;}
+    100% { opacity: 1; margin-right: 0em;}
 }
 
 /* Hola */
@@ -362,13 +434,21 @@ ul {
 }
 
 .hola-p {
-    -webkit-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
-	animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
-    -wekbit-animation-delay: 100ms;
-    animation-delay: 100ms;
     letter-spacing: 0.125rem;
     font-size: 1em;
     margin-top: -.5rem;
+    
+    -webkit-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+    -moz-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+    -ms-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+    -o-animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+	animation: fade-in-2 700ms cubic-bezier(.6,.39,.59,.85);
+    
+    -wekbit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    -ms-animation-delay: 100ms;
+    -o-animation-delay: 100ms;
+    animation-delay: 100ms;
 }
 
 .hp-large-screen {
@@ -398,37 +478,53 @@ ul {
 }
 
 @-webkit-keyframes fade-in {
-	0% {
-		opacity: 0;
-        width: 0em;
-	}
-	
-	100% {
-		opacity: 1;
-        width: 28.125em;
-	}
+	0% { opacity: 0; width: 0em;}
+	100% { opacity: 1; width: 28.125em;}
+}
+
+@-moz-keyframes fade-in {
+	0% { opacity: 0; width: 0em;}
+	100% { opacity: 1; width: 28.125em;}
+}
+
+@-ms-keyframes fade-in {
+	0% { opacity: 0; width: 0em;}
+	100% { opacity: 1; width: 28.125em;}
+}
+
+@-o-keyframes fade-in {
+	0% { opacity: 0; width: 0em;}
+	100% { opacity: 1; width: 28.125em;}
 }
 
 @keyframes fade-in {
-	0% {
-		opacity: 0;
-        width: 0em;
-	}
-	
-	100% {
-		opacity: 1;
-        width: 28.125em;
-	}
+	0% { opacity: 0; width: 0em;}
+	100% { opacity: 1; width: 28.125em;}
 }
 
 @-webkit-keyframes fade-in-2 {
-	0% {
-		opacity: 0;
-	}
-	
-	100% {
-		opacity: 1;
-	}
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-moz-keyframes fade-in-2 {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-ms-keyframes fade-in-2 {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-o-keyframes fade-in-2 {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@keyframes fade-in-2 {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
 }
 
 /* About me */
@@ -492,7 +588,7 @@ ul {
 .about-work {
     font-size: 1.45rem;
     letter-spacing: 0.125rem;
-    position: fixed;
+    position: relative;
     padding: 4rem 1.92rem;
 }
 
@@ -533,6 +629,7 @@ ul {
         font-size: 2.1324rem;
         letter-spacing: 0.125rem;
         padding: 10rem 2.31rem;
+        position: fixed;
     }
     
     .portfolio-piece:hover .portfolio-info {
